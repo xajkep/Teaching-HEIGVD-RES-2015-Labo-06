@@ -18,7 +18,7 @@ This is what this lab is all about.
 
 Here is what you are requested to do:
 
-* As a **starting point**, you have an **empty directory** (with no predefined structure for the Directory Information Tree (**DIT**)) and a Comma-Separated Values (**CSV**) file containing information about **people** belonging to the HEIG-VD organization. Your **first task** is actually to generate this input data. To do that, open the [LdapDataGeneration](LdapDataGeneration) project in Netbeans, run it and get the `users.csv` file.
+* As a **starting point**, you have an **empty directory** (with no predefined structure for the Directory Information Tree (**DIT**)) and a Comma-Separated Values (**CSV**) file containing information about **people** belonging to the HEIG-VD organization. Your **first task** is actually to generate this input data. To do that, open the [LdapDataGenerator](LdapDataGenerator) project in Netbeans, run it and get the `users.csv` file.
 
 * Your **second task** is to **analyze the content and the structure of the CSV file**, to understand what kind of attributes are defined for the personal records. Based on this analysis, you then have to **define the structure of the DIT for your directory**. In other words, you have to define which container nodes you will use under the root of the tree, which types of leaf nodes you will create in the container nodes and what attributes you will define for these leaf nodes. At this stage, you also have to define **how you want to map the values (columns) in the CSV file to entry attributes into the DIT**.
 
