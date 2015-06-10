@@ -1,10 +1,13 @@
 package ch.heigvd.res.labs.ldap;
 
 import ch.heigvd.res.labs.ldap.Person.Gender;
+import static java.awt.SystemColor.text;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.text.Normalizer;
+import java.text.Normalizer.Form;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -63,6 +66,7 @@ public class DataGenerator {
 
         email = firstName + "." + lastName + "@" + "heig-vd.ch";
         email = email.toLowerCase();
+        email = Normalizer.normalize(email, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 
         uniqueIdCounter++;
 
